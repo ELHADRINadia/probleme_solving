@@ -22,7 +22,7 @@ class Tree {
 
   *preOrderTraversal(node = this.root) {
     yield node;
-    if (node.children.length) {
+    if (node.children.length) { 
       for (let child of node.children) {
         yield* this.preOrderTraversal(child);
       }

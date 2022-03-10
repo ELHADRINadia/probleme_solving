@@ -4,7 +4,6 @@ function createNode(value) {
       next: null,
     };
   }
-  // or
   class Node {
     constructor(value) {
       this.value = value;
@@ -21,8 +20,7 @@ function createNode(value) {
   
     insert(value) {
       this.length++;
-      let node = createNode(value); // or use new Node(value)
-  
+      let node = createNode(value);   
       if (this.tail) {
         this.tail.next = node;
         this.tail = node;
